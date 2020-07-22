@@ -27,4 +27,3 @@ export const StoreProvider = ({ children }) => {
     <Store.Provider value={{ globalState, setGlobalState }}>{children}</Store.Provider>
   )
 }
-
