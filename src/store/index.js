@@ -4,6 +4,7 @@ const initialState = {
   popular: [],
   related: [],
   selected: {},
+  term: '',
 };
 
 const reducer = (state, action) => {
@@ -15,6 +16,8 @@ const reducer = (state, action) => {
     // eslint-disable-next-line
     case 'SET_SELECTED':
       return { ...state, selected: action.payload.selected };
+    case 'SET_TERM':
+      return { ...state, term: action.payload.term };
     default:
       return state;
   }
